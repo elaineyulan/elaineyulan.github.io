@@ -13,14 +13,14 @@
             line-height: 1.6;
         }
         header {
-            background-color: #7f8c8d;
+            background-color: #34495e;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
         .container {
             padding: 20px;
-            max-width: 800px;
+            max-width: 1200px;
             margin: auto;
         }
         h1, h2, h3 {
@@ -41,14 +41,31 @@
             height: auto;
             margin: 20px 0;
         }
+        .split-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .split-container .half {
+            flex: 1;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+        }
+        .split-container .half:nth-child(odd) {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .split-container .half:nth-child(even) {
+            background-color: #3498db;
+            color: white;
+        }
         .footer {
             background-color: #2c3e50;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -77,26 +94,28 @@
         <p>Your participation and insights would greatly contribute to understanding the challenges and triumphs of women in this industry, potentially inspiring and guiding the next generation of female business owners.</p>
     </section>
 
-    <section>
-        <h2>Literature Review</h2>
-        <p>The literature on women-run businesses, especially in the bakery and food sectors, highlights themes of resilience, adaptability, and community engagement. For instance:</p>
-        <ul>
-            <li>Angela Chan’s article on MìLà’s success in the competitive frozen food market emphasizes the importance of authenticity and cultural appreciation.</li>
-            <li>Charlotte Atchley’s piece on The Women’s Bakery in Rwanda shows how women-owned businesses can empower local communities and address global issues like hunger and gender inequality.</li>
-            <li>Catherine Fazio’s research on Black women entrepreneurs demonstrates the resilience and innovation that drive these businesses, especially in times of economic hardship.</li>
-        </ul>
-        <p>Overall, the literature underscores the significant impact of women-owned businesses on economic development and social change.</p>
-    </section>
+    <section class="split-container">
+        <div class="half">
+            <h2>Literature Review</h2>
+            <p>The literature on women-run businesses, especially in the bakery and food sectors, highlights themes of resilience, adaptability, and community engagement. For instance:</p>
+            <ul>
+                <li>Angela Chan’s article on MìLà’s success in the competitive frozen food market emphasizes the importance of authenticity and cultural appreciation.</li>
+                <li>Charlotte Atchley’s piece on The Women’s Bakery in Rwanda shows how women-owned businesses can empower local communities and address global issues like hunger and gender inequality.</li>
+                <li>Catherine Fazio’s research on Black women entrepreneurs demonstrates the resilience and innovation that drive these businesses, especially in times of economic hardship.</li>
+            </ul>
+            <p>Overall, the literature underscores the significant impact of women-owned businesses on economic development and social change.</p>
+        </div>
 
-    <section>
-        <h2>Data and Methods</h2>
-        <p>To gather data for this research, I used a combination of online and in-person methods:</p>
-        <ul>
-            <li>First, I identified bakeries in Philadelphia using Yelp, mapping their locations and analyzing customer reviews.</li>
-            <li>I visited these bakeries to conduct interviews with the owners, gaining firsthand insights into their experiences, challenges, and successes.</li>
-            <li>I created a word cloud using natural language processing tools to identify common themes in customer feedback and interviews.</li>
-        </ul>
-        <p>This mixed-method approach allowed me to collect both quantitative and qualitative data, providing a comprehensive understanding of what makes these women-owned bakeries successful.</p>
+        <div class="half">
+            <h2>Data and Methods</h2>
+            <p>To gather data for this research, I used a combination of online and in-person methods:</p>
+            <ul>
+                <li>First, I identified bakeries in Philadelphia using Yelp, mapping their locations and analyzing customer reviews.</li>
+                <li>I visited these bakeries to conduct interviews with the owners, gaining firsthand insights into their experiences, challenges, and successes.</li>
+                <li>I created a word cloud using natural language processing tools to identify common themes in customer feedback and interviews.</li>
+            </ul>
+            <p>This mixed-method approach allowed me to collect both quantitative and qualitative data, providing a comprehensive understanding of what makes these women-owned bakeries successful.</p>
+        </div>
     </section>
 
     <section>
